@@ -1,6 +1,6 @@
 # PatikaSQL
 
-## Odev 1
+## Odev1
 ```sql
 -- 1
 SELECT title, description FROM film;
