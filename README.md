@@ -137,4 +137,9 @@ SELECT country_id, COUNT(city) FROM city
 GROUP BY country_id
 ORDER BY COUNT(city) DESC
 LIMIT 1;
+
+-- 4.1
+SELECT MAX(count) FROM (
+	SELECT country_id, COUNT(city) AS count FROM city
+	GROUP BY country_id);
 ```
