@@ -244,3 +244,20 @@ RIGHT JOIN payment ON payment.customer_id = customer.customer_id;
 SELECT rental.rental_id, customer.first_name, customer.last_name FROM customer
 FULL JOIN rental ON rental.customer_id = customer.customer_id;
 ```
+## Odev11
+```sql
+-- 1
+(SELECT first_name FROM actor)
+UNION ALL
+(SELECT first_name FROM customer);
+
+-- 2
+(SELECT first_name FROM actor)
+INTERSECT
+(SELECT first_name FROM customer);
+
+-- 3
+(SELECT first_name FROM actor)
+EXCEPT
+(SELECT first_name FROM customer);
+```
